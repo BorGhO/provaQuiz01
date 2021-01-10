@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/run_menu"
+        android:title="Run" />
+    <item
+        android:id="@+id/add_html_code"
+        android:title="Add HTML" />
+    <item
+        android:id="@+id/Clear"
+        android:title="Clear" />
+    <item
+        android:id="@+id/close"
+        android:title="Close" />
+    <item
+        android:id="@+id/terzaActivity"
+        android:title="Terza" />
+    <item
+        android:id="@+id/quartaActivity"
+        android:title="Quarta" />
+
+    <item
+        android:id="@+id/quintaActivity"
+        android:title="Quinta" />
+
+    <item
+        android:id="@+id/errorActivity01"
+        android:title="Error01" />
+
+    <item
+        android:id="@+id/recycleActivity01"
+        android:title="Recycle01" />
+
+    <item
+        android:id="@+id/sestaActivity"
+        android:title="Sesta" />
+
+    <item
+        android:id="@+id/settimaActivity"
+        android:title="Se" />
+
+</menu>

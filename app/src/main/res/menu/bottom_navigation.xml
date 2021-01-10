@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemGame"
+        android:icon="@drawable/dd01"
+        android:title="Game" />
+    <item
+        android:id="@+id/itemWeb"
+        android:icon="@drawable/slidetoact_ic_arrow"
+        android:title="Web" />
+    <item
+        android:id="@+id/itemAndroid"
+        android:icon="@drawable/ic_audiotrack_light"
+        android:title="Android" />
+
+</menu>

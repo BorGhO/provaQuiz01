@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity05">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="3"
+        >
+
+        <ImageView
+            android:id="@+id/galleriaView"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/lm01"
+            android:layout_width="wrap_content" />
+
+        <VideoView
+
+            android:id="@+id/videoView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="#97D399"
+
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/cameraButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="276dp"
+        android:text="Camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/galleriaButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+
+        android:text="Galleria"
+        app:layout_constraintStart_toEndOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+
+    <Button
+        android:id="@+id/callButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="80dp"
+        android:text="Chiamata"
+        app:layout_constraintStart_toStartOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+
+    <Button
+        android:id="@+id/smsButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="84dp"
+        android:text="SMS"
+        app:layout_constraintStart_toStartOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+    <Button
+        android:id="@+id/playStoreButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:text="PlayStore"
+        app:layout_constraintStart_toStartOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+
+    <Button
+        android:id="@+id/videoURLButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="156dp"
+        android:text="Video URL"
+        app:layout_constraintStart_toStartOf="@+id/cameraButt"
+        app:layout_constraintTop_toTopOf="@+id/cameraButt" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

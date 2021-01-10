@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity03">
+
+    <LinearLayout
+        android:id = "@+id/layVert03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <!--
+        <com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shadowOffsetX="-15"
+            app:shadowOffsetY="30"
+
+            >
+-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/constr01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ir.samanjafari.easycountdowntimer.EasyCountDownTextview
+                android:id="@+id/easyCountDown"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="204dp"
+                app:colonColor="#000"
+                app:days="0"
+
+                app:daysLabel="D"
+                app:digitBackground="@android:color/transparent"
+                app:hours="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:minute="5"
+                app:second="0"
+                app:setAnimation="true"
+                app:showDays="true"
+                app:showHours="true"
+                app:start_automatically="true"
+                app:textColor="#9c9c9c"
+                app:textSize="30sp" />
+
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/slider01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:elevation="20dp"
+                app:animation_duration="250"
+                app:area_margin="4dp"
+                app:border_radius="2dp"
+
+                app:inner_color="@color/purple_500"
+                app:layout_constraintTop_toBottomOf="@+id/easyCountDown"
+                app:outer_color="@color/green"
+                app:slider_height="80dp"
+                app:slider_locked="false"
+                app:text="Testing all the custom attributes"
+                app:text_size="12sp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="173dp"
+                android:layout_height="151dp"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:onClick="backToMain"
+                android:src="@drawable/lm01"
+                app:civ_border_color="#FF00FF00"
+                app:civ_border_width="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgShadow"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="264dp"
+                android:layout_marginTop="48dp"
+                android:elevation="10dp"
+                android:src="@drawable/dd01"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!-- </com.sdsmdg.harjot.materialshadows.MaterialShadowViewWrapper>
+-->
+
+        <ListView
+            android:id="@+id/list_items01"
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp"
+            android:background="#E30808"
+
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
